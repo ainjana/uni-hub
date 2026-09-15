@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0A0C0E;
+  --foreground: #F5F6F8;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0F12;
+}
+::-webkit-scrollbar-thumb {
+  background: #252932;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D5FA3C;
+}
+
+/* Editorial Bracket Badge Utility */
+.auralee-tag {
+  display: inline-flex;
+  align-items: center;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #D5FA3C;
+}
+
+/* Clean Card Borders */
+.auralee-card {
+  background-color: #121418;
+  border: 1px solid #23272F;
+  transition: all 0.2s ease;
+}
+
+.auralee-card:hover {
+  border-color: #383D48;
+}
+
+/* Accent Lime Glow */
+.lime-glow {
+  box-shadow: 0 0 25px -4px rgba(213, 250, 60, 0.2);
+}
